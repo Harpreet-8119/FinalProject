@@ -1,0 +1,93 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Acme', sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-image: url(https://admin.goweatherforecast.com/images/bg_app@2x.png);
+
+	color: rgb(17, 17, 23);
+	font-size: large;
+	font-weight: 500;
+}
+
+.search {
+	padding: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 20px;
+}
+
+.search input {
+	padding: 8px 2px;
+	outline: none;
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid gray;
+	font-size: 18px;
+	color: #5f5f5f;
+	transition: 200ms;
+	width: 180px;
+	text-align: center;
+}
+.search input:focus {
+	border: none;
+	border-bottom: 2px solid rgb(35, 74, 105);
+	transition: 200ms;
+	transform-origin: left;
+	font-weight: 200;
+	color: rgb(2, 23, 49);
+}
+.search button {
+	margin-top: 15px;
+	padding: 5px 0;
+	width: 50%;
+	background-color: rgb(7, 16, 24);
+	/* border: none; */
+	outline: none;
+	border: 2px solid rgb(145, 149, 153);
+	cursor: pointer;
+	color: rgb(88, 86, 86);
+	font-weight: 700;
+	border-radius: 10px;
+}
+
+.weather {
+	padding: 18px;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.icon img {
+	margin-top: 10px;
+	border-radius: 500px;
+}
+
+.location {
+	font-size: 14px;
+	margin-top: 4px;
+	margin-bottom: 5px;
+	max-width: 300px;
+}
+
+.temp {
+	font-size: 32px;
+	color: rgb(13, 12, 39);
+}
+.footer {
+	margin: 20px;
+	color: #0c0b0b;
+}
